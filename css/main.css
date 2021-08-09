@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.signup,
+.signin,
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+}
+
+.headtext {
+    text-align: center;
+    font-size: 24px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.profile {
+    align-items: center;
+}
+
+.signin-btn,
+.signup-btn {
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    cursor: pointer;
+    width: 70px;
+}
+
+.signin-btn:hover,
+.signup-btn:hover {
+    color: cornflowerblue;
+}
+
+.hide {
+    display: none;
+}
+
+.profile-name {
+    margin: 10px;
+}
+
+.profile-email {
+    margin: 10px;
+}
+
+.profile-status {
+    margin: 10px;
+}
+
+.error {
+    color: crimson;
+    margin: 10px;
+}

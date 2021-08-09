@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="error"></div>
+        <div class="signup">
+            <span class="headtext">Please sign up</span>
+            <form name="signup">
+                <input type="text" name="firstName" placeholder="First name" pattern="^[A-Za-z]{1,20}$" required>
+                <input type="text" name="lastName" placeholder="Last name" pattern="^[A-Za-z]{1,20}$" required>
+                <input type="email" name="email" placeholder="Email address" pattern="^[A-Za-z0-9.-]*@\w*[.]\w{2,}$" required>
+                <input type="password" name="password" placeholder="Password" pattern="^[A-Za-z0-9!@#$%^&*]{8,15}$" required>
+                <input type="submit" value="Sign Up" name="signUp">
+            </form>
+            <span class="signin-btn">Sign in now</span>
+        </div>
+
+        <div class="signin hide">
+            <span class="headtext">Please sign in</span>
+            <form name="signin">
+                <input type="email" name="email" placeholder="Email address" pattern="^[A-Za-z0-9.-]*@\w*[.]\w{2,}$" required>
+                <input type="password" name="password" placeholder="Password" pattern="^[A-Za-z0-9!@#$%^&*]{8,15}$" required>
+                <input type="submit" name="signIn" value="Sign In">
+            </form>
+            <span class="signup-btn">Sign up now</span>
+        </div>
+
+        <div class="profile hide">
+            <div class="profile-picture"></div>
+            <div class="profile-name">Ivan Ivanov</div>
+            <div class="profile-email">test@gmail.com</div>
+            <div class="profile-status">Designer $ Web Developing</div>
+            <input type="submit" value="Sign Out" class="signout-btn">
+        </div>
+
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
